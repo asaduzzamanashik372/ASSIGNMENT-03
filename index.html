@@ -17,11 +17,14 @@
       .manrope-font{
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: <weight>;z
   font-style: normal;
 }
  .custom-bg{
   background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
  }
 
     </style>
@@ -64,9 +67,9 @@
                       <li><a>Item 3</a></li>
                     </ul>
                   </div>
-                  <a class="font-bold text-xl"><i class="fa-solid fa-arrow-right p-1 rounded-full -rotate-45 bg-[#ABEF5F]"></i> Rinterio</a>
+                  <a class="font-bold text-xl "><i class="fa-solid fa-arrow-right p-1 rounded-full -rotate-45 bg-[#ABEF5F]"></i> Rinterio</a>
                 </div>
-                <div class=" hidden lg:flex">
+                <div class=" hidden md:block lg:flex">
                   <ul class="menu menu-horizontal px-1">
                     <li class="font-bold"><a>Home</a></li>
                     <li><a>Services</a></li>
@@ -75,7 +78,7 @@
                     <li><a>Contact Us</a></li>
                   </ul>
                 </div>
-                <div class=" flex space-x-5">
+                <div class="hidden md:block lg:flex space-x-5">
                   <div><i class="fa-solid fa-magnifying-glass p-2 bg-white rounded-full"></i></div>
                   <div><i class="fa-solid fa-cart-shopping p-2 bg-white rounded-full"></i></div>
                   <div><button class="bg-[#ABEF5F] rounded-3xl px-5 py-3 font-bold">Book Consult <i class="fa-solid fa-arrow-right p-1 rounded-full -rotate-45 bg-[#000000] text-white"></i></button></div>
@@ -128,22 +131,22 @@
                     </div>
                  </div>
                  <!-- we design img -->
-                  <div class="flex justify-center items-center">
+                  <div class="flex justify-center items-center mt-20">
                     <img src="./assets/Rectangle.png" alt="">
                   </div>
              </div>
             </section>
             <!-- our work sec -->
             <section class="container mx-auto">
-              <div>
+              <div class="lg:mt-32">
                 <div class="flex flex-col items-center justify-center space-y-3">
                   <button class="px-3 py-2 rounded-full bg-white"><h3 class="font-bold text-4"><i class="fa-solid fa-arrow-right"></i> How We Works</h3></button>
-                  <h1 class="font-bold text-4xl text-center">Our Works Process</h1>
+                  <h1 class="font-bold text-4xl text-center mt-10">Our Works Process</h1>
                 <p class="text-gray-500 text-xs text-center mx-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
                 
                 <div class="lg:grid grid-cols-4">
-                  <div class=" bg-[#E7C1D3] p-6 rounded-xl m-5">
+                  <div class=" bg-[#E7C1D3] p-6 rounded-xl m-5 lg:max-w-64 ">
                     <img src="./assets/concept.png" alt="">
                     <h2 class="font-bold text-xl">Concept</h2>
                     <p class="text-gray-500 text-xs">The barn house captivates with its blend of rustic charm and modern.</p>
@@ -248,12 +251,12 @@
           <h1 class="font-bold text-4xl">Let's Connect</h1>
         <p class="text-gray-500 text-xs mx-5 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         </div>
-        <div class="grid grid-cols-1 p-5 lg:grid-cols-2 gap-5 mt-12 lg:p-10 ">
-          <div><input type="text" class="grow bg-white rounded-full px-12 -py-3 ml-9 lg:px-24 py-5" placeholder="First Name" /></div>
-          <div><input type="text" class="grow bg-white rounded-full px-12 -py-3 ml-9 lg:px-24 py-5" placeholder="Last Name" /></div>
-          <div><input type="number" class="grow bg-white rounded-full px-12 -py-3 ml-9 lg:px-24 py-5" placeholder="Phone Number" /></div>
-          <div><input type="email" class="grow bg-white rounded-full px-12 -py-3 ml-9 lg:px-24 py-5" placeholder="Email" /></div>
-          <div class="row-span-4 lg:col-span-2"><input type="text" class="grow  bg-white rounded-2xl px-12 py-12 lg:px-80 lg:py-20 ml-9" placeholder="Write Your Massage Hare" /></div>
+        <div class="grid grid-cols-1 p-5 lg:grid-cols-2 gap-5 lg:gap-7 mt-12 lg:p-10 mx-auto">
+          <div><input type="text" class="grow bg-white rounded-full px-12 -py-6  lg:px-56 py-6" placeholder="First Name" /></div>
+          <div><input type="text" class="grow bg-white rounded-full px-12 -py-6  lg:px-56 py-6" placeholder="Last Name" /></div>
+          <div><input type="number" class="grow bg-white rounded-full px-12 -py-6  lg:px-56 py-6" placeholder="Phone Number" /></div>
+          <div><input type="email" class="grow bg-white rounded-full px-12 -py-6  lg:px-56 py-6" placeholder="Email" /></div>
+          <div><input type="text" class="grow  bg-white rounded-full px-12 py-6 lg:px-56 py-6" placeholder="Write Your Massage Hare" /></div>
         </div>
       </div>
      </section>
